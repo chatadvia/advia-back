@@ -11,6 +11,8 @@ app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)  
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
+CORS(app, supports_credentials=True)
+
 os.environ['GOOGLE_API_KEY'] = "AIzaSyBcYei2m_mC8QSBQh72DQ1SbbwOL_pNHfo"
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
