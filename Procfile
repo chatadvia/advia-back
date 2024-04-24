@@ -1,1 +1,0 @@
-web: gunicorn adv-chat:app
